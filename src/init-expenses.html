@@ -4,7 +4,7 @@
 <link rel="import" href="../bower_components/iron-ajax/iron-ajax.html">
 
 
-<dom-module id="my-new-view">
+<dom-module id="init-expenses">
     <!-- Defines the element's style and local DOM -->
     <template>
         <style>
@@ -15,8 +15,8 @@
             }
         </style>
 
-        <h1>New view</h1>
-        <paper-checkbox>Ready to deploy!</paper-checkbox>
+        <h1>Test rest call</h1>
+        <paper-checkbox>Ready to rest call</paper-checkbox>
         <iron-ajax
                 auto="true"
                 url="https://jsonplaceholder.typicode.com/users/1"
@@ -26,10 +26,10 @@
     </template>
     <script>
         // Your new element extends the Polymer.Element base class
-        class MyNewView extends Polymer.Element {
-            static get is() { return 'my-new-view'; }
+        class InitExpenses extends Polymer.Element {
+            static get is() { return 'init-expenses'; }
         }
         //Now, register your new custom element so the browser can use it
-        customElements.define(MyNewView.is, MyNewView);
+        customElements.define(InitExpenses.is, InitExpenses);
     </script>
 </dom-module>
